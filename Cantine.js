@@ -8,3 +8,27 @@ const montantVerse = 5000;
 // Conversion de la quantité en nombre
 const quantite = Number(quantiteTexte);
 
+// Prix unitaire et nom du plat (switch)
+let nomPlat;
+let prixUnitaire;
+
+switch (codeplat) {
+    case 1:
+        nomPlat = "Atttieke-poisson";
+        prixUnitaire = 1500;
+        break;
+    case 2:
+        nomPlat = "Riz-poulet";
+        prixUnitaire = 2000;
+        break;
+    case 3:
+        nomPlat = "Alloco-oeuf";
+        prixUnitaire = 1000
+        break;
+}
+
+//Fonction calcule du montant total
+function calculerTotal(prixUnitaire, quantite) {
+    return prixUnitaire * quantite;
+}
+const total = calculerTotal(prixUnitaire, quantite);
